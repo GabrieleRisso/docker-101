@@ -1,5 +1,30 @@
 # Tutorial: Docker Multi-Container con Nginx e Client API
 
+# Comandi Iniziali di Setup
+
+```bash
+# Creare la directory principale del progetto
+mkdir docker-project
+cd docker-project
+
+# Creare la struttura per il server nginx
+mkdir -p nginx-server/html
+mkdir -p nginx-server/api
+
+# Creare la directory per il client
+mkdir api-client
+
+# Creare tutti i file necessari (touch)
+touch nginx-server/Dockerfile
+touch nginx-server/nginx.conf
+touch nginx-server/html/index.html
+touch nginx-server/api/data.json
+touch api-client/Dockerfile
+touch api-client/script.sh
+touch docker-compose.yml
+```
+
+
 ## Struttura del Progetto
 
 ```plaintext
