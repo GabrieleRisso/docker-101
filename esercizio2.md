@@ -146,7 +146,7 @@ CMD ["/script.sh"]
 sleep 5
 
 echo "Richiedo il contenuto JSON dal server..."
-curl -s http://nginx-server/json | jq '.'
+curl -s http://nginx-server/json
 
 # Loop infinito per mantenere il container attivo
 while true; do
